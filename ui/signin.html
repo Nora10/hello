@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ride-My-Way App</title>
+  <link rel="shortcut icon" href="cars/spo.ico.png" />
+
+  <meta name="description" content="Ride-My-Way App">
+  <meta name="author" content="Nora Anazia">
+
+  <!-- Google font used -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|IBM+Plex+Sans:300,400,700|IBM+Plex+Mono:300,400,700" rel="prefetch">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|IBM+Plex+Sans:300,400,700|IBM+Plex+Mono:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link rel="stylesheet" href="styles/register_style.css">
+
+</head>
+
+<body>
+  <h1 class="cooltie1 centralize">User Sign-In</h1>
+  <form action="#" method="POST" id="idForm">
+    <div class="container">
+
+      <div>Please login to view your personalized Ride-My-Way dashboard.</div>
+      <hr>
+
+      <div>
+        <label for="email">
+          <b>Email</b>
+        </label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+      </div>
+
+      <div>
+        <label for="psw">
+          <b>Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <div>
+        <input type="radio" name="trip" value="Driver" required> Driver
+        <input type="radio" name="trip" value="Rider" required> Rider
+      </div>
+
+
+      <div class="clearfix">
+
+        <button type="reset" class="cancelbtn">Cancel</button>
+
+        <button type="button" class="signupbtn" onclick="dashboardOptions()">Sign-In</button>
+      </div>
+    </div>
+    <script>
+      function dashboardOptions() {
+        var selectvalue = document.querySelector('input[name="trip"]:checked');
+        var answerselect = selectvalue.value;
+        if (answerselect == "Driver") {
+          window.location = "dashboard_driver.html";
+          return true;
+        } else {
+          window.location = 'dashboard_rider.html';
+        }
+      }
+    </script>
+  </form>
+
+  <div id="ridesss">
+
+  </div>
+  <div>
+
+    <p class="centralize">Dont have an account yet? Sign Up to be a
+      <a href="register_driver.html"> Driver</a> or a
+      <a href="register_rider.html"> Rider!</a>
+      <br>
+      <br>
+
+      <a href="index.html">Return to home page.</a>
+    </p>
+
+  </div>
+</body>
+
+</html>

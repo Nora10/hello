@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ride-My-Way App</title>
+  <link rel="shortcut icon" href="cars/spo.ico.png" />
+
+  <meta name="description" content="Ride-My-Way App">
+  <meta name="author" content="Nora Anazia">
+
+  <link rel="stylesheet" href="styles/register_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <h1 class="cooltie1 centralize">Rider's Registration</h1>
+  <form action="dashboard_rider.html" method="POST" id="idForm">
+    <div class="container">
+
+      <div>Please fill out this form to create a Ride-My-Way Rider's account.</div>
+      <hr>
+
+      <div>
+        <label for="name">
+          <b>Firstname</b>
+        </label>
+        <input type="text" placeholder="Enter Firstname" name="firstname" required>
+
+        <label for="name">
+          <b>Lastname</b>
+        </label>
+        <input type="text" placeholder="Enter Lastname" name="lastname" required>
+      </div>
+
+      <div>
+        <label for="email">
+          <b>Email</b>
+        </label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="phone">
+          <b>Phone</b>
+        </label>
+        <input type="number" placeholder="Enter Phone Number" name="phone" required>
+      </div>
+
+      <div>
+        <label for="psw">
+          <b>Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="age">
+          <b>Date of Birth</b>
+        </label>
+        <input type="date" name="dob" required>
+      </div>
+
+      <div>
+        <label for="photo">
+          <b>Photo</b>
+        </label>
+        <input type="file" name="photo" required>
+
+        <label for="city">
+          <b>City</b>
+        </label>
+        <input type="text" placeholder="Enter City" name="city" required>
+      </div>
+
+      <div>
+
+        <input type="checkbox" checked="checked" name="remember">By creating an account you agree to our
+        <a href="#">Terms & Privacy</a>
+
+      </div>
+
+      <div class="clearfix">
+        <button type="reset" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+  <p class="centralize"> © 2018 Ride-My-Way App. All rights reserved | Design by Nora Anazia. ||
+    <a href="index.html">Return to Homepage.</a>
+  </p>
+</body>
+
+</html>
